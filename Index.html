@@ -1,1 +1,97 @@
-#First Line
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kiwi Raised</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+  <header>
+    <nav class="navbar">
+      <!-- logo on the left -->
+      <div class="logo">Kiwi Raised</div>
+
+      <!-- links to all the pages -->
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="food.html">Food</a></li>
+        <li><a href="featured.html">Featured</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- big banner at the top -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Kiwi Raised</h1>
+        <p>Born and bred in Aotearoa. Growing up Kiwi means pies from the dairy, pavlova at Christmas, and learning to love dumplings from your mates. This is my food story.</p>
+        <!-- button goes to the food page -->
+        <a href="food.html" class="btn">Explore the Food</a>
+      </div>
+    </section>
+
+    <!-- image slideshow, controlled by script.js -->
+    <section class="slider-section">
+      <div class="slider">
+        <div class="slide active">
+          <img src="images/slide1.jpg" alt="A classic NZ meat pie" />
+        </div>
+        <div class="slide">
+          <img src="images/slide2.jpg" alt="Pavlova with fresh fruit" />
+        </div>
+        <div class="slide">
+          <img src="images/slide3.jpg" alt="Dumplings" />
+        </div>
+        <!-- arrow buttons -->
+        <button class="slider-btn prev">&#8592;</button>
+        <button class="slider-btn next">&#8594;</button>
+      </div>
+    </section>
+
+    <!-- three cards summing up what the site is -->
+    <section class="overview">
+      <h2>What This Site Is About</h2>
+      <p>I'm a New Zealand European who grew up without a strong connection to my ethnic roots. My culture is the culture I lived — fish and chips on the beach, sausage rolls at school, and sitting around my mates tables eating ramen and dumplings. This is a celebration of that.</p>
+
+      <div class="overview-cards">
+
+        <article class="card">
+          <h3>Classic Kiwi Eats</h3>
+          <p>The pies, the pavs, the Christmas ham. The food that built my childhood.</p>
+          <a href="food.html">See the food →</a>
+        </article>
+
+        <article class="card">
+          <h3>Asian Influence</h3>
+          <p>Growing up alongside Asian friends means their food became my food too. Dumplings, ramen, bubble tea.</p>
+          <a href="food.html">See the food →</a>
+        </article>
+
+        <article class="card">
+          <h3>Featured Spot</h3>
+          <p>One of my favourite places to eat in Auckland.</p>
+          <a href="featured.html">Check it out →</a>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Kiwi Raised &mdash; Liam Kidd</p>
+  </footer>
+
+  <!-- script goes at the bottom so the html loads first -->
+  <script src="script.js"></script>
+
+</body>
+</html>

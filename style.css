@@ -270,3 +270,80 @@ footer {
   .overview { padding: 2rem 1.5rem; }
   .slide img { height: 220px; }
 }
+
+/* ---- FOOD PAGE ---- */
+
+.food-section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.food-section-alt {
+  background: white;
+  max-width: 100%;
+  padding: 4rem 0;
+}
+
+.food-section-alt > * {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.food-section h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  color: var(--green);
+  margin-bottom: 0.5rem;
+}
+
+.section-intro {
+  color: var(--mid);
+  margin-bottom: 2rem;
+}
+
+.food-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.food-card {
+  background: white;
+  border-radius: 10px;
+  border: 0.5px solid var(--light-border);
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.food-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.09);
+}
+
+.food-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.food-info {
+  padding: 1.25rem;
+}
+
+.food-info h3 {
+  font-family: 'Playfair Display', serif;
+  color: var(--green);
+  margin-bottom: 0.4rem;
+  font-size: 1.15rem;
+}
+
+.food-info p {
+  color: var(--mid);
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
